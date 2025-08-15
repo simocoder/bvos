@@ -23,6 +23,10 @@ It does almost nothing… and that’s the point.
 - `ld` (GNU linker)
 - `qemu-system-i386` (or another emulator)
 
+```bash
+sudo apt-get install -y nasm gcc-multilib qemu-system-x86
+```
+
 **Build**
 ```bash
 make

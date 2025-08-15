@@ -47,11 +47,11 @@ make clean
 ## 📂 Project Structure
 
 ```
-boot.asm        # Bootloader - loads the kernel
-kernel_entry.asm# Switches to protected mode, jumps to C kernel
-kernel.c        # Minimal C kernel
-linker.ld       # Linker script for flat binary
-Makefile        # Build rules
+boot.asm          # Bootloader - loads the kernel
+kernel_entry.asm  # Switches to protected mode, jumps to C kernel
+kernel.c          # Minimal C kernel
+linker.ld         # Linker script for flat binary
+Makefile          # Build rules
 ```
 
 ---

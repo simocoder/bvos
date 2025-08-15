@@ -1,0 +1,13 @@
+# Build artifacts
+*.o
+*.elf
+*.bin
+os-image.bin
+
+# Editor/OS files
+*~
+*.swp
+.DS_Store
+
+# Optional: QEMU stuff if you dump logs
+qemu.log

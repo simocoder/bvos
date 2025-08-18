@@ -64,12 +64,19 @@ pm_setup:
     mov ax, 0x0E47
     int 0x10
 
+    ; --- hide BIOS text cursor while still in real mode ---
+    mov ah, 0x01
+    mov ch, 0x20     ; bit 5 set to hide
+    mov cl, 0x00
+    int 0x10
+
+    ; NOTE: BIOS ints no longer work fully after the code below.
     lgdt [gdt_desc]
     mov eax, cr0
     or  eax, 1
     mov cr0, eax
 
-    ; NOTE: after this far jump, BIOS ints no longer work.
+    ; NOTE: after this far jump, BIOS ints no longer work at all.
     jmp 0x08:pmode_entry
 
 [BITS 32]

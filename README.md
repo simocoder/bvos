@@ -5,7 +5,7 @@ It does almost nothing… and that’s the point.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Boots from BIOS** via a custom MBR boot sector  
 - **Loads a tiny kernel** from disk into memory  
@@ -15,7 +15,7 @@ It does almost nothing… and that’s the point.
 
 ---
 
-## 🛠 Build & Run
+## Build & Run
 
 **Prerequisites**
 - `nasm` (Netwide Assembler)
@@ -44,7 +44,7 @@ make clean
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 boot.asm          # Bootloader - loads the kernel
@@ -56,7 +56,7 @@ Makefile          # Build rules
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 1. **Bootloader** (`boot.asm`)
    - Runs in 16-bit real mode
@@ -73,13 +73,17 @@ Makefile          # Build rules
 
 ---
 
-## ⚠ Disclaimer
+## Disclaimer
 
 This project is for **learning purposes only**.  
 It is **not** a complete operating system — it’s just enough code to demonstrate the boot process and run simple C code on bare metal.
 
 ---
 
-## 📜 License
+## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+## Blog
+
+[https://www.rebelyaml.com/posts/bvos-barely-visible-os/](https://www.rebelyaml.com/posts/bvos-barely-visible-os/)

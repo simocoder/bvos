@@ -11,11 +11,17 @@ static void puts_at(int row, int col, const char* s) {
     }
 }
 
+static int strlen(const char* s) {
+    int len = 0;
+    while (*s++) len++;
+    return len;
+}
+
 void kmain(void) {
-    // Clear screen
+    // Clear screen     
     for (int i = 0; i < 80*25; i++) {
         VGA_TEXT[i] = (uint16_t)' ' | (uint16_t)(0x07 << 8);
-    }
-    puts_at(12, 33, "Hello, world!");
+    } 
+    puts_at(11, 33, "Hello, world!");
     for (;;){ __asm__ __volatile__("hlt"); }
 }
